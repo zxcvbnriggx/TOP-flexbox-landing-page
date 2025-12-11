@@ -108,6 +108,7 @@ body {
 
 .hero-content--left h2 {
 	color: var(--color-text-main-hero);
+	font-weight: 900;
 }
 
 .hero-content--right {
@@ -123,12 +124,62 @@ body {
 	background: #333333;
 }
 
+/* hero section end */
+
+.information__information-content {
+	padding-inline: 2rem;
+}
+
 .information__information-content h3 {
 	color: var(--color-text-sect-header);
 	margin-bottom: 3.5rem;
+	font-weight: 900;
 }
 
-/* hero section end */
+.quote {
+	background-color: var(--color-bg-sect-quote);
+	padding-block: 6rem;
+	color: var(--color-text-sect-quote);
+	text-align: start;
+}
+
+.quote-content {
+	padding-inline: 4rem;
+}
+
+.quote-content blockquote {
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.quote-content cite {
+	font-weight: 700;
+	text-align: end;
+}
+
+.cta {
+	padding-block: 5rem;
+}
+
+.cta-content {
+	background: var(--color-bg-cta);
+	color: var(--color-text-cta);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-block: 2.5rem;
+	border-radius: 6px;
+}
+
+.cta-content__text {
+	text-align: start;
+}
+
+.cta__headline {
+	font-weight: 700;
+}
 
 /* general stylings end */
 
@@ -183,6 +234,7 @@ section {
 }
 
 button,
+.btn,
 *[role='button'] {
 	display: inline-block;
 	text-decoration: none;
@@ -198,9 +250,13 @@ button,
 	}
 }
 
+.btn--cta {
+	border: 1px solid var(--color-neutral-100);
+}
+
 .cards-container {
 	display: flex;
-	gap: 5rem;
+	gap: 4rem;
 	flex-wrap: wrap;
 }
 
