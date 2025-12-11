@@ -181,6 +181,17 @@ body {
 	font-weight: 700;
 }
 
+footer {
+	background: var(--color-bg-footer);
+	color: var(--color-neutral-200);
+	padding-block: 1.5rem;
+}
+
+footer p {
+	text-align: center;
+	font-weight: 300;
+}
+
 /* general stylings end */
 
 /* utility classes start */
@@ -242,8 +253,9 @@ button,
 	border: none;
 	background-color: var(--color-bg-button);
 	color: var(--color-text-button);
-	padding: 0.6rem 2rem;
+	padding: 0.75rem 2.5rem;
 	border-radius: 4px;
+	font-weight: bold;
 
 	&:hover {
 		opacity: 0.9;
@@ -252,6 +264,11 @@ button,
 
 .btn--cta {
 	border: 1px solid var(--color-neutral-100);
+
+	&:hover {
+		color: var(--color-primary-400);
+		background: var(--color-neutral-100);
+	}
 }
 
 .cards-container {
