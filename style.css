@@ -90,6 +90,59 @@ body {
 }
 /* header end */
 
+section {
+	padding-block: 2.5rem 6rem;
+}
+
+button,
+*[role='button'] {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	background-color: var(--color-bg-button);
+	color: var(--color-text-button);
+	padding: 0.6rem 2rem;
+	border-radius: 4px;
+
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
+/* hero section start */
+
+.hero {
+	background: var(--color-bg-hero);
+	color: var(--color-text-hero);
+}
+
+.hero-content--left {
+	color: var(--color-text-hero);
+
+	& > *:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.hero-content--left h2 {
+	color: var(--color-text-main-hero);
+}
+
+.hero-content--right {
+	display: flex;
+}
+
+.hero-content--right__img-container {
+	border: 1px solid var(--color-primary-400);
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	background: #333333;
+}
+/* hero section end */
+
 /* general stylings end */
 
 /* utility classes start */
@@ -115,10 +168,20 @@ body {
 
 /* layout start */
 .container {
-	max-width: 1200px;
+	max-width: 1100px;
 	margin-inline: auto;
 	padding-inline: 1rem;
 }
+
+.even-columns {
+	display: flex;
+	gap: 1rem;
+}
+
+.even-columns > * {
+	flex: 1;
+}
+
 /* layout end */
 
 /* utility classes end */
