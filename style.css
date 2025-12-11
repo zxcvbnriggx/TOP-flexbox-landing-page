@@ -1,10 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* css resets */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+:root {
+	--color-primary-400: #3882f6;
+
+	--color-neutral-700: #1f2937;
+	--color-neutral-300: #e5e7eb;
+	--color-neutral-200: #f9faf8;
+	--color-neutral-100: #fff;
+
+	--color-bg-hero: var(--color-neutral-700);
+	--color-bg-footer: var(--color-neutral-700);
+	--color-text-main-hero: var(--color-neutral-200);
+	--color-text-hero: var(--color-neutral-300);
+	--color-text-nav: var(--color-neutral-300);
+	--color-text-brand: var(--color-neutral-200);
+	--color-bg-button: var(--color-primary-400);
+	--color-text-button: var(--color-neutral-100);
+	--color-bg-cta: var(--color-primary-400);
+	--color-text-cta: var(--color-neutral-100);
+	--color-text-sect-header: var(--color-neutral-700);
+	--color-bg-sect-quote: var(--color-neutral-300);
+	--color-text-sect-quote: var(--color-neutral-700);
+
+	--ff-primary: 'Roboto', sans-serif;
+
+	--ff-body: var(--ff-primary);
+
+	--fs-regular: 1rem;
+	--fs-medium: 1.125rem;
+	--fs-lg: 1.5rem;
+	--fs-xl: 2.25rem;
+	--fs-xxl: 3rem;
+}
+
+html {
+	font-size: 16px;
+}
+
 body {
-	background: black;
-	color: white;
+	font-family: var(--ff-body);
+}
+
+/* utility classes */
+.fs-regular {
+	font-size: var(--fs-regular);
+}
+.fs-medium {
+	font-size: var(--fs-medium);
+}
+.fs-lg {
+	font-size: var(--fs-lg);
+}
+.fs-xl {
+	font-size: var(--fs-xl);
+}
+.fs-xxl {
+	font-size: var(--fs-xxl);
 }
