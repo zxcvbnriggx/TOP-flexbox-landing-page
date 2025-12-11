@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* css resets */
+/* css resets start */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
+/* css resets end */
 
 :root {
 	--color-primary-400: #3882f6;
@@ -43,15 +45,60 @@ html {
 	font-size: 16px;
 }
 
+/* general stylings start */
 body {
 	font-family: var(--ff-body);
 }
 
-/* utility classes */
+/* header start */
+.site-header {
+	background: var(--color-bg-hero);
+	padding-block: 1rem;
+}
+
+.site-header__site-brand a {
+	color: var(--color-text-brand);
+	text-decoration: none;
+}
+
+.primary-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.primary-nav ul {
+	list-style: none;
+}
+
+.primary-nav ul li {
+	display: inline;
+	padding-bottom: 0.5rem;
+
+	&:hover {
+		border-bottom: 1px solid var(--color-primary-400);
+	}
+}
+
+.primary-nav ul li:not(:last-child) {
+	margin-inline-end: 1.5rem;
+}
+
+.primary-nav ul li a {
+	text-decoration: none;
+	color: var(--color-text-nav);
+}
+/* header end */
+
+/* general stylings end */
+
+/* utility classes start */
+
+/* typography start */
 .fs-regular {
 	font-size: var(--fs-regular);
 }
-.fs-medium {
+.fs-md {
 	font-size: var(--fs-medium);
 }
 .fs-lg {
@@ -63,3 +110,15 @@ body {
 .fs-xxl {
 	font-size: var(--fs-xxl);
 }
+
+/* typography end */
+
+/* layout start */
+.container {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 1rem;
+}
+/* layout end */
+
+/* utility classes end */
